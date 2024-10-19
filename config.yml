@@ -1,6 +1,6 @@
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+ - jekyll-remote-theme  
 
 title: Gerlinde Theunissen
-description:  Polisci Ph.D. student at UniKonstanz/ EXCInequality; Currently at UCSanDiego: My work relates to contexts, neighborhood interactions + exposure, and spatial analyses of political behavior. 
+description:  "Polisci Ph.D. student at UniKonstanz/ EXCInequality"
