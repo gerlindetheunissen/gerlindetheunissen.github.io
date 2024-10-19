@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;
+								charset=utf-8" />
+	<meta name="viewport" content="width=device-width,
+						initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<style>
+		body {
+			background-color: #eeeeee;
+			margin: 20px 10px;
+			padding-top: 30px;
+		}
+
+		.imga {
+			text-align: left;
+		}
+
+		.link {
+			margin-right: 1.5em;
+			display: inline;
+		}
+
+		.abstract {
+			clear: both;
+			display: none;
+			margin-left: 1.0em;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		@media only screen and (min-width: 993px) {
+			.imga {
+				text-align: right;
+			}
+		}
+
+		div.anchor {
+			display: block;
+			position: relative;
+			top: -50px;
+			visibility: hidden;
+		}
+
+		/*entries below deal with width for collapse of menu*/
+		/*Preventing vertical dividers from appearing collapsed*/
+		@media (max-width: 420px) {
+			.navbar-collapse .nav>.divider-vertical {
+				display: none;
+			}
+		}
+
+		/*Defining the vertical dividers*/
+		.navbar .divider-vertical {
+			height: 50px;
+			margin: 0 9px;
+			border-right: 1px solid #ffffff;
+			border-left: 1px solid #DADADA;
+		}
+
+		.navbar-inverse .divider-vertical {
+			border-right-color: #222222;
+			border-left-color: #111111;
+		}
+
+		@media only screen and (min-width: 420px) {
+			.collapse {
+				display: block;
+			}
+
+			.navbar-header {
+				float: left;
+			}
+
+			.navbar-toggle {
+				display: none;
+			}
+
+			.navbar-nav {
+				float: left;
+				margin: 0;
+			}
+
+			.navbar-nav>li {
+				float: left;
+			}
+
+			.navbar-nav>li>a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			.navbar-right {
+				float: right !important;
+			}
+		}
+
+		@media only screen and (max-width: 420px) {
+			.collapse {
+				display: none;
+			}
+
+			.navbar-header {
+				display: block;
+			}
+		}
+	</style>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="generator" content="Gerlinde Theunissen" />
+	<meta name="description" content="Homepage of Gerlinde Theunissen" />
+	<meta name="keywords" content="Theunissen,Gerlinde" />
+	<title>Gerlinde Theunissen</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57875834-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-57875834-3');
+	</script>
+
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Name and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Gerlinde Theunissen</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="#talks">Talks and Conferences</a></li>
+					<li><a href="#code">Code</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!--Script for toggling abstracts-->
+	<SCRIPT type="text/javascript">
+		function toggle(aa) {
+			state = document.getElementById(aa).style.display
+			if (state == '' || state == 'none') {
+				document.getElementById(aa).style.display = 'block';
+			}
+			if (state == 'block') {
+				document.getElementById(aa).style.display = 'none';
+			}
+		}
+	</SCRIPT>
+	<!--End Script for toggling abstracts-->
+
+	<!--Script for mathjax-->
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<!--End Script for toggling abstracts-->
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="imga" style="padding-top:23px;">
+					<img src="visaindiame.jpeg" width="211" height="200" alt="Portrait of me" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div id="main">
+					<h3>About Me</h3>
+
+					<p>
+						I am a Doctoral Research Fellow at 
+						<a href="https://www.exc.uni-konstanz.de/en/inequality/" target="_blank"> The Center of Excellence "The Politics of Inequality," University of Konstanz
+						,</a>
+						where I started in the fall of 2020.
+						My research at the intersection of political behavior, sociology, psychology, and geography focuses on perceptions and reactions to wealth differences in neighborhoods.
+					</p>
+ 
+
+					<!--
+				 
+				-->
+
+					<p>
+						 ...
+					</p>
+
+
+					<p>My <a href=".pdf" target="_blank">CV.</a></p>
+					
+
+					<div class="anchor" id="publications"></div>
+					<h3>Publications</h3>
+
+					<div class="link">
+						<a href="#publications">By Year</a>
+					</div>
+					<div class="link">
+						<a href="research.html">By Topic</a>
+					</div>
+
+					<p>
+						<!--  make space, clumsily -->
+					</p>
+
+					<dl>
+						<dt>
+							<strong>
+								<b>  Estimating Local Inequality from Nighttime Lights
+								</b>
+							</strong>
+						</dt>
+						<dd>
+							with Nils B. Weidmann (University of Konstanz)
+						</dd>
+						<dd>
+							Remote Sensing 13, no. 22: 4624
+						</dd>
+						<dd>
+							<div class="link">
+								<a href="javascript:toggle('abstractBCKLPPSS23')">Abstract</a>
+							</div>
+							<div id="abstractBCKLPPSS23" class="abstract" style="display:none">
+								<p>
+									Economic inequality at the local level has been shown to be an important predictor of people’s political perceptions and preferences. 
+									However, research on these questions is hampered by the fact that local inequality is difficult to measure and systematic data collections are rare, 
+									in particular in countries of the Global South. We propose a new measure of local inequality derived from nighttime light (NTL) emissions data. 
+									Our measure corresponds to the local inequality in per capita nighttime light emissions, using VIIRS-derived nighttime light emissions data and spatial population data 
+									from WorldPop. We validate our estimates using local inequality estimates from the Demographic and Health Surveys (DHS) for a sample of African countries. 
+									Our results show that nightlight-based inequality estimates correspond well to those derived from survey data, 
+									and that the relationship is not due to structural factors such as differences between urban and rural regions. We also present predictive results, 
+									where we approximate the (survey-based) level of local inequality with our nighttime light indicator. 
+									This illustrates how our approach can be used for new cases where no other data are available	</p>
+							</div>
+							<!---
+							<div class="link">
+								<a href="https://doi.org/10.3390/rs13224624" target="_blank">
+									LINK</a>
+							</div>
+							-->
+						</dd>
+					</dl>
+ 
+
+
+					<div class="anchor" id="talks"></div>
+					<h3>Recent and Upcoming Talks</h3>
+
+
+					<!-- recent and upcoming -->
+					<ul class="list-unstyled">
+						
+
+						<li>
+							<a href="LINK" target="_blank">
+								TITLE;
+							</a>
+							PLACE,
+							Winter, 2024.
+						</li>
+						<li>
+							WHAT
+						</li>
+						<li>&ensp;</li>
+</ul> 
+						 
+						 
+							 
+
+					<div class="anchor" id="code"></div>
+					<h3>Code</h3>
+					<dl>
+						 
+						<dt>
+							<strong>
+								<a href="https://doi.org/10.7802/2345" target="_blank">
+									Replication Data for: "Estimating Local Inequality from Nighttime Lights”
+								</a>
+							</strong>
+						</dt>
+						<dd>
+							The link to paper 
+							<a href="https://doi.org/10.3390/rs13224624" target="_blank">
+								"Estimating Local Inequality from Nighttime Lights”
+							</a>.
+							
+							The code was written by Gerlinde Theunissen based on previous work by Sebastian Schutte and Nils B. Weidmann and in collaboration with Nils B. Weidmann
+						</dd>
+					</dl>
+
+
+
+
+					<div class="anchor" id="contact"></div>
+					<h3>Contact and CV</h3>
+					<p>I can be reached by email at </p>
+					<p> gerlinde.theunissen @ uni-konstanz.de </p> 
+					<p>My CV can be downloaded </p>
+					<p> gerlinde.theunissen @ uni-konstanz.de </p> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
