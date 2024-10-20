@@ -62,9 +62,12 @@
       color: #333;
     }
 
-    dl dt {
-      font-weight: bold;
-      margin-top: 15px;
+    /* Embed PDF styling */
+    .pdf-container {
+      width: 100%;
+      height: 800px; /* Adjust height as necessary */
+      border: 1px solid #ccc;
+      margin-top: 20px;
     }
 
     /* Responsive adjustment for smaller screens */
@@ -95,13 +98,17 @@
 
   <!-- Main content -->
   <div class="main-content">
-    <h2>Publication in the In_equality magazine 02: "Perception of Inequality" <href> https://kops.uni-konstanz.de/server/api/core/bitstreams/e2a01bce-c7b6-4878-9db9-b0a495b15c43/content</href>  </h2>
-    <dl>
-      <dt>Magazine of the Cluster of Excellence "The Politics of Inequality" <href> https://www.exc.uni-konstanz.de/en/inequality/research/publications/in-equality-magazine/ </href> </dt>
-      <dd>with Nils B. Weidmann (University of Konstanz)</dd>
-      <dd></dd>
-    </dl>
- 
+    <h2>Publication in the In_equality Magazine 02: "Perception of Inequality"</h2>
+    <p>Magazine of the Cluster of Excellence "The Politics of Inequality"</p>
+    <p>with Nils B. Weidmann (University of Konstanz)</p>
+
+    <!-- Embed the PDF file directly on the page -->
+    <div class="pdf-container">
+      <embed src="In_equality_02_2021.pdf" type="application/pdf" width="100%" height="100%">
+    </div>
+
+    <!-- Optional link to download or open the PDF in a new tab -->
+    <p><a href="In_equality_02_2021.pdf" target="_blank">Open in new tab</a></p>
   </div>
 
 </body>
